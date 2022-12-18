@@ -1,22 +1,26 @@
 Summary:	Modular status panel for X11 and Wayland
 Name:		yambar
-Version:	1.8.0
+Version:	1.9.0
 Release:	1
 License:	MIT
 Group:		Applications
 Source0:	https://codeberg.org/dnkl/yambar/archive/%{version}.tar.gz
-# Source0-md5:	d5908122aefddbfdb290dfa9c4c5b82b
+# Source0-md5:	76a11ffc037684893316957af6ecd80c
 URL:		https://codeberg.org/dnkl/yambar/
 BuildRequires:	alsa-lib-devel
+BuildRequires:	bison
 BuildRequires:	fcft-devel < 4.0.0
 BuildRequires:	fcft-devel >= 3.0.0
+BuildRequires:	flex
 BuildRequires:	json-c-devel
 BuildRequires:	libmpdclient-devel
 BuildRequires:	libxcb-devel
-BuildRequires:	meson >= 0.53.0
+BuildRequires:	meson >= 0.59.0
 BuildRequires:	ninja
+BuildRequires:	pipewire-devel >= 0.3
 BuildRequires:	pixman-devel
 BuildRequires:	pkgconfig
+BuildRequires:	pulseaudio-devel
 BuildRequires:	rpm-build >= 4.6
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	scdoc
