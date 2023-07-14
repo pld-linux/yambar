@@ -1,7 +1,7 @@
 Summary:	Modular status panel for X11 and Wayland
 Name:		yambar
 Version:	1.10.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Applications
 Source0:	https://codeberg.org/dnkl/yambar/archive/%{version}.tar.gz
@@ -38,6 +38,8 @@ Requires(post,postun):	desktop-file-utils
 Requires:	fcft < 4.0.0
 Requires:	fcft >= 3.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		specflags	-Wno-format-truncation
 
 %description
 yambar is a lightweight and configurable status panel (bar, for short)
