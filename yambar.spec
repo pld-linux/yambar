@@ -1,11 +1,12 @@
 Summary:	Modular status panel for X11 and Wayland
 Name:		yambar
-Version:	1.9.0
+Version:	1.10.0
 Release:	1
 License:	MIT
 Group:		Applications
 Source0:	https://codeberg.org/dnkl/yambar/archive/%{version}.tar.gz
-# Source0-md5:	76a11ffc037684893316957af6ecd80c
+# Source0-md5:	30c6503f385f9b72562aa1dbba60358b
+Patch0:		build.patch
 URL:		https://codeberg.org/dnkl/yambar/
 BuildRequires:	alsa-lib-devel
 BuildRequires:	bison
@@ -62,6 +63,7 @@ ZSH completion for yambar command line.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
 %meson build
